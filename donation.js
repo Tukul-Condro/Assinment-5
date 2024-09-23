@@ -25,6 +25,10 @@ document.getElementById('donate-for-noakhali').addEventListener('click',function
         
     
     alert('Donation successfull');
+    document.getElementById('donate-success').classList.remove('hidden');
+    document.getElementById('donate-done').addEventListener('click',function(){
+        document.getElementById('donate-success').classList.add('hidden');
+    })
     }
     else{
         alert('unable to donate');
@@ -38,4 +42,10 @@ document.getElementById('donation-btn').addEventListener('click',function(){
 })
 document.getElementById('history-btn').addEventListener('click',function(){
     showSectionById('show-transaction');
+})
+document.getElementById('donation-btn').addEventListener('click',function(){
+    addAndRemoveBgById('donation-btn','history-btn')
+})
+document.getElementById('history-btn').addEventListener('click',function(){
+    addAndRemoveBgById('history-btn','donation-btn')
 })

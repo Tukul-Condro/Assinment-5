@@ -14,3 +14,8 @@ function showSectionById(id){
     document.getElementById('show-transaction').classList.add('hidden');
     document.getElementById(id).classList.remove('hidden');
 }
+function addAndRemoveBgById(id1,id2){
+    document.getElementById(id1).classList.add('bg-green-400');
+    document.getElementById(id2).classList.remove('bg-green-400','hover:bg-green-400');
+   
+}

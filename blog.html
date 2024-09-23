@@ -24,10 +24,10 @@
                     <span id="balance">5500</span>BDT
                   </div>
           </div>
-          <div class="flex justify-center gap-9 mt-14">
-              <button id="donation-btn" class="btn btn-success text-xl font-normal bg-white">Donation</button>
-              <button id="history-btn" class="btn btn-success text-xl font-normal bg-white">History</button>
-          </div>
+          <div class="flex justify-center gap-9 mt-7">
+            <button id="donation-btn" class="btn  text-xl font-normal bg-green-400 ">Donation</button>
+            <button id="history-btn" class="btn  text-xl font-normal ">History</button>
+        </div>
       </div>
         <main class="ml-8 mt-8">
             <div class="text-2xl font-black mb-5">
@@ -37,35 +37,48 @@
                 <div class="join join-vertical w-full">
                     <div class="collapse collapse-arrow join-item border-base-300 border">
                       <input type="radio" name="my-accordion-4" checked="checked" />
-                      <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                      <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
                       <div class="collapse-content">
-                        <p>hello</p>
+                        <p>The DOM allows web developers to programmatically access, manipulate, and update the structure and content of a webpage. It acts as the bridge between web documents and scripting languages like JavaScript.</p>
                       </div>
                     </div>
                     <div class="collapse collapse-arrow join-item border-base-300 border">
                       <input type="radio" name="my-accordion-4" />
-                      <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                      <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
                       <div class="collapse-content">
-                        <p>hello</p>
+                        <p>To select an element from the DOM in JavaScript, you can use several methods provided by the DOM API, depending on the type of element or elements you want to select. <br>
+                1.getElementById('id'): Selects one element by ID. <br>
+                2.getElementsByClassName('className'): Selects all elements with the specified class (live collection).<br>
+                3.getElementsByTagName('tagName'): Selects all elements with the specified tag (live collection).<br>
+                 4.querySelector('selector'): Selects the first element matching a CSS selector.<br>
+                5.querySelectorAll('selector'): Selects all elements matching a CSS selector (static NodeList).<br> 
+                  Each method has its own strengths, so you can choose one based on the type of selection you need to perform.
+                        </p>
                       </div>
                     </div>
                     <div class="collapse collapse-arrow join-item border-base-300 border">
                       <input type="radio" name="my-accordion-4" />
-                      <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                      <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
                       <div class="collapse-content">
-                        <p>hello</p>
+                        <p>Efficiency: Reduces the need for multiple event listeners. <br>
+                          Scalability: Works seamlessly with dynamically added elements. <br>
+                          Maintainability: Simplifies code by centralizing event handling logic. <br>
+                          Event delegation is a powerful technique for improving performance and reducing complexity when handling events in a DOM with many elements or dynamic content.</p>
                       </div>
                     </div>
                     <div class="collapse collapse-arrow join-item border-base-300 border">
                         <input type="radio" name="my-accordion-4" />
-                        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                        <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
                         <div class="collapse-content">
-                          <p>hello</p>
+                          <p>Attributes can be accessed and modified using methods like getAttribute(), setAttribute(), and removeAttribute(), or by directly modifying properties like element.src or element.id. <br>
+                            Styles can be directly modified using the style property (e.g., element.style.color) or managed through CSS classes using classList methods for better separation and maintainability.</p>
                         </div>
                       </div>
                   </div>
             </div>
         </main>
     </div>
+    <script src="./donation.js"></script>
+    <script src="./utility.js"></script>
 </body>
 </html>
