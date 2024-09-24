@@ -65,7 +65,7 @@ function donationValue(donateValueId,balanceId,netDonateId,historyId,placeId){
         showModalById('donate-success','donate-done');
     }
     else{
-        alert('You have not enough Money!')
+        alert('Your account balance is low!')
     }
     
 }

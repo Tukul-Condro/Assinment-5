@@ -9,25 +9,25 @@
 </head>
 <body>
   
-        <div class="sticky z-50  backdrop-blur-md top-0 pb-5">
-            <div class="navbar bg-amber-50 pb-10 ">
+        <nav class="sticky z-50  backdrop-blur-md top-0 pb-5 ">
+            <div class="navbar bg-amber-50 pb-10">
                     <div class="navbar-start ml-8">
                         <button class="btn bg-green-400"><a href="./blog.html">Blog</a></button>
                       </div>
-                      <div class="navbar-center gap-5">
+                      <div class="navbar-center gap-5 max-sm:hidden">
                         <img src="./assets/logo.png" alt="">
-                        <p class="text-4xl font-black">Donation Bangladesh</p>
+                        <p class="text-4xl  font-black  ">Donation Bangladesh</p>
                       </div>
                       <div class="navbar-end text-2xl font-black mr-8 gap-2">
                         <img src="./assets/coin.png" alt="">
-                        <span id="balance">5500</span>BDT
+                        <span id="balance">20000</span>BDT
                       </div>
               </div>
               <div class="flex justify-center gap-9 mt-7">
                   <button id="donation-btn" class="btn  text-xl font-normal bg-green-400 ">Donation</button>
                   <button id="history-btn" class="btn  text-xl font-normal ">History</button>
               </div>
-        </div>
+        </nav>
       
         <main class="ml-5 mr-5">
           <div id="donate-data" class="" >
@@ -44,14 +44,14 @@
                         <button  class="btn"> <img src="./assets/coin.png" alt=""><span id="donate-noakhali">0</span> BDT</button>
                     </div>
 
-                  <h2 id="place-noakhali" class="card-title">Donate for Flood Relief in <span >Noakhali</span>, Bangladesh</h2>
+                  <h2 id="place-noakhali" class="card-title">Donate for Flood Relief in Noakhali, Bangladesh</h2>
                   <p>Noakhali, Bangladesh, has been severely impacted by devastating floods, displacing thousands of families and destroying homes, crops, and infrastructure. The people of Noakhali urgently need your help to rebuild their lives. By donating, you can provide essential relief like food, clean water, shelter, and medical aid to those most affected by the disaster.</p>
                   <input id="inpute-noakhali" type="text" placeholder="Donate Amount" class="input input-bordered w-full" />
                   <div class="card-actions justify-center mt-5">
-                    <button id="noakhali" class="btn btn-success w-full text-xl font-medium">Donate Now</button>
+                    <button id="noakhali" class="btn btn-success  text-xl font-medium">Donate Now</button>
                   </div>
                 </div>
-          </div>
+             </div>
 
             <div class="card lg:card-side bg-base-100 shadow-xl ml-6 mr-6 mt-8 mb-6 p-5 border-solid border-2 border-stone-100">
                 <figure class="m-2 w-11/12 rounded-md">
@@ -66,11 +66,11 @@
                           <button class="btn"> <img src="./assets/coin.png" alt=""><span id="donate-feni">0</span> BDT</button>
                       </div>
 
-                    <h2 id="place-feni" class="card-title">Donate for Flood Relif at <span >Feni</span>, Bangladesh</h2>
+                    <h2 id="place-feni" class="card-title">Donate for Flood Relif at Feni, Bangladesh</h2>
                     <p>Feni, Bangladesh, is facing a critical situation due to devastating floods that have left families homeless, without food, and struggling to survive. Entire communities are submerged, and access to basic necessities like clean water, shelter, and medical care has become a challenge.</p>
                     <input id="input-feni" type="text" placeholder="Donate Amount" class="input input-bordered w-full" />
                     <div class="card-actions justify-center mt-5">
-                      <button id="feni" class="btn btn-success w-full text-xl font-medium">Donate Now</button>
+                      <button id="feni" class="btn btn-success  text-xl font-medium">Donate Now</button>
                     </div>
                   </div>
             </div>
@@ -87,11 +87,11 @@
                           <button class="btn"><img src="./assets/coin.png" alt=""><span id="donate-quota">0</span> BDT</button>
                       </div>
                       
-                    <h2 id="quoata-aid" class="card-title">Aid for <span >Injured</span> in the Quota Movement</h2>
+                    <h2 id="quoata-aid" class="card-title">Aid for Injured in the Quota Movement</h2>
                     <p>By donating, you can provide essential medical care, supplies, and assistance to those who have been hurt while fighting for a cause that seeks justice and equality. Your contribution will help ease their suffering, support their recovery, and ensure that they are not left behind in this critical time. Together, we can show solidarity and make a difference for those who stood up for change.</p>
                     <input id="input-quota" type="text" placeholder="Donate Amount" class="input input-bordered w-full" />
                     <div  class="card-actions justify-center mt-5">
-                      <button id="quota" class="btn btn-success w-full text-xl font-medium">Donate Now</button>
+                      <button id="quota" class="btn btn-success text-xl font-medium">Donate Now</button>
                     </div>
                   </div>
             </div>
@@ -112,7 +112,7 @@
              <p>Your donation can provide life-saving relief to those impacted by the floods. By contributing, you'll help deliver essentials like food, drinking water, medical aid, and temporary shelters to families in need. Every donation, no matter the size, brings hope and recovery to the people of Comilla as they strive to rebuild their lives. Together, we can make a real difference.</p>
              <input id="input-comilla" type="text" placeholder="Donate Amount" class="input input-bordered w-full" />
              <div class="card-actions justify-center mt-5">
-               <button id="comilla" class="btn btn-success w-full text-xl font-medium">Donate Now</button>
+               <button id="comilla" class="btn btn-success  text-xl font-medium">Donate Now</button>
              </div>
            </div>
             </div>
@@ -138,7 +138,13 @@
                   </div>
                 </div>
           </div>
-        </main>       
+        </main> 
+
+        <footer>
+          <div class="bg-amber-50 h-20 w-full">
+
+          </div>
+        </footer>     
     
          <script src="./donation.js"></script>
          <script src="./utility.js"></script>   
